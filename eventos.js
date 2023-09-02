@@ -1,7 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const botonesSaludo = document.querySelector('.myButton');
+function saludar() {
+  alert('¡Hola!');
+}
 
-  botonesSaludo.addEventListener('click', function() {
-      alert('Hola! Soy el div"');
-    });
+document.addEventListener('DOMContentLoaded', function() {
+  const divElement = document.getElementById("myButton");
+
+  divElement.addEventListener('click', function() {
+      alert('Hola! Soy el div');
+  });
 });
